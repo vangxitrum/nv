@@ -1,0 +1,246 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+
+a, a:hover, a {
+  text-decoration: none;
+  color: #333;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ac-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shadow {
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin: 0 40px;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #FAFAFC;
+  width: 100%;
+  height: 10%;
+  padding: 1em;
+}
+
+.header nav {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 5%;
+}
+
+.header__title {
+  color: #333;
+  font-size: 1.625rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__link {
+  width: 100%;
+}
+
+.header a {
+  color: #afadad;
+  font-size: 1rem;
+}
+
+.header a::after {
+  position: relative;
+  content: "";
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: #ec1f55;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header a:hover::after {
+  opacity: 1;
+}
+
+.header a a:active {
+  color: #ec1f55;
+}
+
+.header a a:active::after {
+  opacity: 1;
+}
+
+.body {
+  background-color: #FAFAFC;
+}
+
+.body__informationContainer {
+  position: relative;
+  height: 75%;
+  width: 20%;
+  background-color: #fff;
+  left: 4em;
+  float: left;
+}
+
+.body__functionContainer {
+  background-color: #fff;
+  position: relative;
+  height: 75%;
+  width: 68%;
+  float: right;
+  margin-right: 4em;
+  margin-left: 2em;
+}
+
+.body__avatarUpload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px auto;
+}
+
+.body__avatarUpload__avatarEdit {
+  position: absolute;
+  right: 45px;
+  z-index: 1;
+  top: 10px;
+}
+
+.body__avatarUpload__avatarEdit input {
+  display: none;
+}
+
+.body__avatarUpload__avatarEdit input + label {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.body__avatarUpload__avatarEdit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.body__avatarUpload__avatarEdit input + label:after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f304";
+  color: #afadad;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.body__avatarUpload__avatarPreview {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.body__avatarUpload__avatarPreview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.body h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+
+.body h3 small {
+  display: block;
+  font-size: 13px;
+  padding-top: 4px;
+  color: #afadad;
+}
+
+.body__tag {
+  font-size: 13px;
+  color: #afadad;
+  margin: 0;
+  margin-left: 5%;
+}
+
+.body__info {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  margin-left: 5%;
+  margin-top: 0;
+}
+
+.body__infoContainer:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.body__infoContainer:first-child {
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */
